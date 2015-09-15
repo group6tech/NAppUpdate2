@@ -80,7 +80,8 @@ namespace NAppUpdate.Updater
 						// An abandoned mutex is exactly what we are expecting...
 					} finally {
 						Log("The application has terminated (as expected)");
-					}
+            Thread.Sleep(1000); // Let's even wait a bit longer
+          }
 				}
 
 				bool updateSuccessful = true;
